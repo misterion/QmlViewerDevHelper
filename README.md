@@ -22,9 +22,10 @@ qml viewer. Yes, you can write in manualy with
 
 but it`s not clear and make some troubles with Loader. 
 
-Jusn build project and put the dll to your qmlviewer plugin folder. 
+Just build project and put the dll to your qmlviewer plugin folder. 
+
 Also you need to put valid qmldir file:
-plugin QmlViewerDevHelperX86
+  plugin QmlViewerDevHelperX86
 
 You can put dll in any folder you like, just put the path with -I options 
 on QmlViewer. 
@@ -34,5 +35,8 @@ And usage:
 or 
 -P "/var varName=varValue" 
 so varName would be available in qml. 
+
+Example:
+-I "/var imagePath=d:/work/project/images"
        
 (c) 2012 Nikolay Bondarenko <misterionkell@gmail.com>
