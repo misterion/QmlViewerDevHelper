@@ -25,6 +25,7 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 #include <QmlViewerDevHelper/QmlViewerDevHelper.h>
+#include <QmlViewerDevHelper/WindowsApiHelper.h>
 
 #include <QtCore/QDebug>
 #include <QtCore/QString>
@@ -36,6 +37,7 @@
 
 void QmlViewerDevHelper::registerTypes(const char *uri)
 {
+    qmlRegisterUncreatableType<WindowsApiHelper>("WinApiHelper", 1, 0, "WinApi", QLatin1String("Do not create objects of type WinApi"));
 }
 
 void QmlViewerDevHelper::initializeEngine(QDeclarativeEngine *engine, const char *uri)
