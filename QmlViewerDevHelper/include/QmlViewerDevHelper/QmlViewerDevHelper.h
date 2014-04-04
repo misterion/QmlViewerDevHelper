@@ -33,10 +33,12 @@
 class QmlViewerDevHelper : public QDeclarativeExtensionPlugin
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "QmlViewerDevHelper")
+
 public:
   void registerTypes(const char *uri);
   void initializeEngine(QDeclarativeEngine *engine, const char *uri);
-
+  
 private:
   void registerVarExtension(QDeclarativeEngine *engine);
 };
