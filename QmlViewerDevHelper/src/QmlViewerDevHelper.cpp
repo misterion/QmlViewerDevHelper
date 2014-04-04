@@ -40,7 +40,7 @@ void QmlViewerDevHelper::registerTypes(const char *uri)
 
 void QmlViewerDevHelper::initializeEngine(QDeclarativeEngine *engine, const char *uri)
 {
- this->registerVarExtension(engine);
+  this->registerVarExtension(engine);
 }
 
 void QmlViewerDevHelper::registerVarExtension(QDeclarativeEngine *engine)
@@ -62,9 +62,3 @@ void QmlViewerDevHelper::registerVarExtension(QDeclarativeEngine *engine)
     engine->rootContext()->setContextProperty(key, "file:///" + value + "/");
   }
 }
-
-#ifdef _DEBUG
-Q_EXPORT_PLUGIN2(QmlViewerDevHelperX86d, QmlViewerDevHelper);
-#else
-Q_EXPORT_PLUGIN2(QmlViewerDevHelperX86, QmlViewerDevHelper);
-#endif
