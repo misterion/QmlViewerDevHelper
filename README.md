@@ -38,5 +38,7 @@ so varName would be available in qml.
 
 Example:
 -I "/var imagePath=d:/work/project/images"
+
+You may find qt4.x version in 1.0.0 tag.
        
 (c) 2012 Nikolay Bondarenko <misterionkell@gmail.com>
