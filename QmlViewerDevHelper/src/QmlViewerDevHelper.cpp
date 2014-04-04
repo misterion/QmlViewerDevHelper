@@ -62,9 +62,3 @@ void QmlViewerDevHelper::registerVarExtension(QDeclarativeEngine *engine)
     engine->rootContext()->setContextProperty(key, "file:///" + value + "/");
   }
 }
-
-#ifdef _DEBUG
-Q_EXPORT_PLUGIN2(QmlViewerDevHelperX86d, QmlViewerDevHelper);
-#else
-Q_EXPORT_PLUGIN2(QmlViewerDevHelperX86, QmlViewerDevHelper);
-#endif
