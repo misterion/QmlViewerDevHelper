@@ -55,9 +55,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QmlViewerDevHelper.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="src\WindowsApiHelper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_WindowsApiHelper.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
@@ -70,9 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="include\QmlViewerDevHelper\QmlViewerDevHelper.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="include\QmlViewerDevHelper\WindowsApiHelper.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
