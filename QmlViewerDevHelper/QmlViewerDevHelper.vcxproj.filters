@@ -55,12 +55,24 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QmlViewerDevHelper.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ShellHelper.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ShellHelper.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShellHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="QmlViewerDevHelper.rc" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="include\QmlViewerDevHelper\QmlViewerDevHelper.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="include\QmlViewerDevHelper\ShellHelper.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
