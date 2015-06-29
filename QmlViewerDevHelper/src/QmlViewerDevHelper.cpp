@@ -34,8 +34,11 @@
 #include <QtDeclarative/QDeclarativeContext>
 #include <QtDeclarative/QDeclarativeItem>
 
+#include <QmlViewerDevHelper/ShellHelper.h>
+
 void QmlViewerDevHelper::registerTypes(const char *uri)
 {
+  qmlRegisterUncreatableType<ShellHelper>("Tulip", 1, 0, "Shell", QLatin1String("Do not create objects of type Shell"));
 }
 
 void QmlViewerDevHelper::initializeEngine(QDeclarativeEngine *engine, const char *uri)
